@@ -20,6 +20,11 @@ body {
     margin: 0 auto;
 }
 
+.global {
+    padding: 5em 3em 5em 3em;
+    background-color: #ffffff;
+}
+
 /* HEADER */
 header {
     text-align: center;
@@ -47,7 +52,7 @@ header p {
 /* NAV */
 .nav {
     max-width: 100%;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     padding: 2em 10em;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -85,3 +90,98 @@ header p {
 }
 
 /* MAIN */
+.main {
+    border-bottom: 1px solid #0000002d;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "title-main avatar-main"
+    "description-main avatar-main"
+    "btn-main avatar-main";
+}
+
+.title-main {
+    grid-area: title-main;
+    font-size: 3em;
+    color: var(--dark);
+}
+
+.title-main::after {
+    margin-top: 30px ;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-image: linear-gradient(45deg, #24C6DC 15%, #514A9D 85%);
+}
+
+.avatar-main {
+    grid-area: avatar-main;
+    max-width: 16em;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+.description-main {
+    grid-area: description-main;
+    color: var(--dark);
+    margin: 4em 0;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+.btn-main {
+    grid-area: btn-main;
+    max-width: 200px;
+    padding: 13px 0;
+    border-radius: 5px;
+    border-style: none;
+    background-color: transparent;
+    border: 1px solid #24C6DC;
+    color: var(--dark);
+    transition: .3s;
+}
+
+.btn-main:hover{
+    background-image: linear-gradient(45deg, #24C6DC 15%, rgb(36, 146, 220) 85%);
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "avatar-main"
+        "title-main"
+        "description-main"
+        "btn-main";
+    }
+
+    .avatar-main {
+        max-width: 12em;
+        margin: 0 auto;
+        margin-bottom: 3em;
+    }
+
+    .btn-main {
+        margin: 2em auto;
+        max-width: 100px;
+        padding: 8px 70px;
+        border-radius: 5px;
+        border-style: none;
+        background-color: transparent;
+        border: 1px solid #24C6DC;
+        color: var(--dark);
+        transition: .3s;
+        text-align: center;
+    }
+    
+    .btn-main:hover{
+        background-image: linear-gradient(45deg, #24C6DC 15%, rgb(36, 146, 220) 85%);
+        color: #fff;
+    }
+}
