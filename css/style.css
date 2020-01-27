@@ -4,8 +4,6 @@
     --light: #D4DCFF;
     --trueblue: #0575E6;
     --dark: #545677;
-    --lightblue: #5299D3;
-    --red: #AD343E;
 }
 
 textarea {
@@ -45,6 +43,19 @@ header h1 {
 header p {
     color: var(--transparent);
     font-size: 1.5em;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    padding: 3em 1em 0 1em;
+}
+
+header ul li a {
+    color: #fff;
 }
 
 .avatar img {
@@ -107,7 +118,6 @@ header p {
     grid-template-areas:
         "title-main avatar-main"
         "description-main avatar-main"
-        "btn-main avatar-main";
 }
 
 .title-main {
@@ -415,6 +425,8 @@ header p {
 .contact {
     display: flex;
     justify-content: space-between;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .formulario {
@@ -454,6 +466,8 @@ header p {
 
 @media screen and (max-width: 767px) {
     .formulario form {
-        max-width: 300px;
+        max-width: 200px;
     }
 }
+
+/* FOOTER */
