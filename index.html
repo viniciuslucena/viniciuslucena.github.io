@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- LINKS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Vinícius Lucena</title>
 </head>
+
 <body>
     <!-- Wrapper -->
     <div class="wrapper">
         <header>
-            <span class="avatar"><img src="img/avatar.jpg" alt="Avatar Vinicius Lucena"></span>
-            <h1>vinicius lucena</h1>
+            <span class="avatar"><img src="img/logo.png" alt="Logo Vinicius Lucena"></i></span>
+            <h1>vinícius lucena</h1>
             <p>front-end developer</p>
         </header>
 
         <nav class="nav">
             <ul>
                 <li><a href="#">sobre mim</a></li>
-                <li><a href="#">tecnologias</a></li>
+                <li><a href="#">serviços</a></li>
                 <li><a href="#">projetos</a></li>
                 <li><a href="#">contato</a></li>
             </ul>
@@ -32,15 +35,62 @@
 
         <section class="main global">
             <h1 class="title-main">Oi, eu sou o Vinícius</h1>
-            <p class="description-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem doloribus eum quod, atque possimus vel laudantium ut quia numquam!</p>
+            <p class="description-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem
+                doloribus eum quod, atque possimus vel laudantium ut quia numquam!</p>
             <button type="submit" class="btn-main">Saiba mais</button>
             <img src="img/avatar.jpg" alt="Vinicius Lucena" class="avatar-main">
         </section>
 
-        <section class="tecnologias global">
-            <h2 class="title-tecnologias">tecnologias</h2>
-            
+        <section class="servicos global">
+            <h2 class="title-servicos">serviços</h2>
+            <div class="services">
+                <div class="code">
+                    <i class="fas fa-code fa-5x"></i>
+                    <h3>desenvolvo seu site</h3>
+                    <p>seu site totalmente desenvolvido por mim.</p>
+                </div>
+                <div class="responsive">
+                    <i class="fas fa-mobile-alt fa-5x"></i>
+                    <h3>responsividade</h3>
+                    <p>seu site receberá acesso de qualquer tipo de dispositivo.</p>
+                </div>
+                <div class="seo">
+                    <i class="fas fa-search-dollar fa-5x"></i>
+                    <h3>SEO</h3>
+                    <p>facilidade em ser localizado pelos principais motores de busca</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects global">
+            <h2 class="title-projects">projetos</h2>
+            <p class="description-projects">alguns dos projetos desenvolvidos por mim</p>
+            <div class="project-images">
+                <div class="images-portfolio">
+                    <img src="img/1p.png" alt="Unearth Project Vinicius Lucena" class="portfolio1">
+                </div>
+                <div class="images-portfolio">
+                    <img src="img/2p.png" alt="Huddle Project Vinicius Lucena" class="portfolio2">
+                </div>
+                <div class="images-portfolio">
+                    <img src="img/3p.png" alt="FitnessGym Project Vinicius Lucena" class="portfolio3">
+                </div>
+            </div>
+            <button type="submit" class="btn-projects">Veja mais</button>
+        </section>
+
+        <section class="contact global">
+            <div class="formulario">
+                <h2 class="title-form">contato</h2>
+                <form>
+                    <input type="text" placeholder="Nome" class="field">
+                    <input type="text" placeholder="Email" class="field">
+                    <textarea cols="30" rows="10" placeholder="Escreva sua mensagem" class="field"></textarea>
+                </form>
+                <button type="submit">Enviar</button>
+            </div>
         </section>
     </div>
 </body>
+
 </html>
