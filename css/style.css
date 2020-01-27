@@ -115,7 +115,7 @@ header ul li a {
     width: 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991.98px) {
     .nav {
         display: none;
     }
@@ -185,7 +185,7 @@ header ul li a {
 
 /* MAIN RESPONSIVO */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991.98px) {
     .main {
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
@@ -305,7 +305,7 @@ header ul li a {
     margin: 1.1em 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991.98px) {
     .services {
         display: grid;
     }
@@ -481,7 +481,7 @@ header ul li a {
     color: #fff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991.98px) {
     .formulario form {
         max-width: 200px;
     }
