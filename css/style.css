@@ -502,7 +502,8 @@ header ul li a:hover {
 .formulario form {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    min-width: 300px;
+    width: 900px;
 }
 
 .field {
@@ -532,8 +533,10 @@ header ul li a:hover {
 
 @media screen and (max-width: 991.98px) {
     .formulario form {
-        max-width: 200px;
+        width: 100%;
     }
+    
+
 }
 
 /* FOOTER */
