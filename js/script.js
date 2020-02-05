@@ -1,5 +1,5 @@
-const headerScroll = document.querySelector('img');
+const enviarFormulario = document.querySelector('.enviar');
 
-headerScroll.addEventListener('click', () => {
-    console.log('clicou');
-});
+enviarFormulario.addEventListener('click', ()=> {
+    alert('Formulário enviado com sucesso. =)');
+})
